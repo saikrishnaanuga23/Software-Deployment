@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class LetterGrade {
     public static void main(String[] args) {
         
-        char letterGrade;
+        String letterGrade;
         
         System.out.println(" Please enter your grade: ");
 
@@ -13,20 +13,32 @@ public class LetterGrade {
 
         int grade = scan.nextInt();
 
-        if (grade <= 100  && grade >= 90 )
-            letterGrade = 'A';
+        if (grade >= 95 )
+            letterGrade = "A+";
 
-        else if(grade >= 80)
-            letterGrade = 'B';
+        else if(grade >= 90)
+            letterGrade = "A";
 
-        else if(grade >= 70)
-            letterGrade = 'C';
+        else if(grade >= 85)
+            letterGrade = "B+";
 
-        else if(grade >= 60)
-            letterGrade = 'D';
+         else if(grade >= 80)
+            letterGrade = "B";    
+
+        else if(grade >= 75)
+            letterGrade = "C+";
+
+         else if(grade >= 70)
+            letterGrade = "C";    
+
+        else if(grade >= 65)
+            letterGrade = "D+";
+
+         else if(grade >= 60)
+            letterGrade = "D";    
 
         else
-            letterGrade = 'F';
+            letterGrade = "F";
 
             System.out.println("the letterGrade for " + grade + " is " + letterGrade);
 
